@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    # Version in Leap/SLE 15
-    - name: Set up Python 3.6
+    # Version in openSUSE Tumbleweed
+    - name: Set up Python 3.10
       uses: actions/setup-python@v2
       with:
-        python-version: 3.6
+        python-version: "3.10"
     - name: Install dependencies
       run: |
         pip3 install --upgrade pip
